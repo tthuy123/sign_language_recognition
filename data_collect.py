@@ -1,65 +1,90 @@
-import cv2 
-import mediapipe as mp 
+import cv2
+import mediapipe as mp
 import os
-from function import * 
+import numpy as np
+import json
+from function import *
 
 # Path for exported data, numpy arrays
-DATA_PATH = os.path.join('MP_Data') 
+DATA_PATH = os.path.join('MP_Data')
 
-# Actions that we try to detect
-actions = np.array(['toi','thich','mau hong','none'])
+# Get the directory of the current script
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Thirty videos worth of data
-no_sequences = 30
+# Set the JSON file path relative to the script's directory
+JSON_FILE_PATH = os.path.join(BASE_DIR, 'dataset', 'WLASL100_train.json')
 
-# Videos are going to be 30 frames in length
-sequence_length = 30
+def load_glosses_and_urls(json_file_path):
+    """Load glosses and group their corresponding video URLs from the JSON file."""
+    with open(json_file_path, 'r') as f:
+        data = json.load(f)
+    gloss_to_urls = {}
+    for entry in data:
+        gloss = entry['gloss']
+        urls = [instance['url'] for instance in entry['instances']]
+        gloss_to_urls[gloss] = urls
+    return gloss_to_urls
 
-cap = cv2.VideoCapture(0)
+# Load actions (glosses) and video URLs
+gloss_to_urls = load_glosses_and_urls(JSON_FILE_PATH)
 
-# Set mediapipe model 
-with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
+def setup_video_capture(video_url):
+    """Initialize video capture from the given URL."""
+    return cv2.VideoCapture(video_url)
+
+def process_frame(frame, holistic, action, sequence, frame_num):
+    """Process a single frame: detect landmarks, draw them, and save keypoints."""
+    # Make detections
+    image, results = mediapipe_detection(frame, holistic)
+
+    # Draw landmarks
+    draw_styled_landmarks(image, results)
     
-    # NEW LOOP
-    # Loop through actions
-    for action in actions:
-        # Loop through sequences aka videos
-        for sequence in range(no_sequences):
-            # Loop through video length aka sequence length
-            for frame_num in range(sequence_length):
+    # Export keypoints
+    keypoints = extract_keypoints(results)
+    npy_path = os.path.join(DATA_PATH, action, str(sequence), str(frame_num))
+    os.makedirs(os.path.dirname(npy_path), exist_ok=True)  # Dynamically create directories
+    np.save(npy_path, keypoints)
 
-                # Read feed
-                ret, frame = cap.read()
+def collect_data(gloss_to_urls):
+    """Main function to collect data for the given glosses and their video URLs."""
+    for gloss, urls in gloss_to_urls.items():
+        sequence = 0  # Initialize sequence counter for each gloss
 
-                # Make detections
-                image, results = mediapipe_detection(frame, holistic)
+        for video_url in urls:
+            cap = setup_video_capture(video_url)
 
-                # Draw landmarks
-                draw_styled_landmarks(image, results)
-                
-                # NEW Apply wait logic
-                if frame_num == 0: 
-                    cv2.putText(image, 'STARTING COLLECTION', (120,200), 
-                               cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255, 0), 4, cv2.LINE_AA)
-                    cv2.putText(image, 'Collecting frames for {} Video Number {}'.format(action, sequence), (15,12), 
-                               cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
-                    # Show to screen
-                    cv2.imshow('OpenCV Feed', image)
-                    cv2.waitKey(2000)
-                else: 
-                    cv2.putText(image, 'Collecting frames for {} Video Number {}'.format(action, sequence), (15,12), 
-                               cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
-                    # Show to screen
-                    cv2.imshow('OpenCV Feed', image)
-                
-                # NEW Export keypoints
-                keypoints = extract_keypoints(results)
-                npy_path = os.path.join(DATA_PATH, action, str(sequence), str(frame_num))
-                np.save(npy_path, keypoints)
+            # Set Mediapipe model
+            with mp.solutions.holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
 
-                # Break gracefully
-                if cv2.waitKey(10) & 0xFF == ord('q'):
-                    break
-                    
-    cap.release()
-    cv2.destroyAllWindows()
+                while True:  # Dynamically process video frames
+                    frame_num = 0  # Initialize frame counter for each sequence
+
+                    while True:  # Process frames for the current sequence
+                        # Read feed
+                        ret, frame = cap.read()
+                        if not ret:  # Break if the video ends
+                            break
+
+                        process_frame(frame, holistic, gloss, sequence, frame_num)
+                        frame_num += 1
+
+                        # Break gracefully on 'q' key press
+                        if cv2.waitKey(10) & 0xFF == ord('q'):
+                            cap.release()
+                            cv2.destroyAllWindows()
+                            exit()
+
+                    # Increment sequence counter after processing a video
+                    sequence += 1
+
+                    # Break if the video ends
+                    if not ret:
+                        break
+
+            cap.release()
+            cv2.destroyAllWindows()
+
+if __name__ == "__main__":
+    gloss_to_urls = load_glosses_and_urls(JSON_FILE_PATH)
+    collect_data(gloss_to_urls)
