@@ -1,65 +1,75 @@
-import cv2 
-import mediapipe as mp 
+import cv2
+import mediapipe as mp
 import os
-from function import * 
+import numpy as np
+from function import *
 
 # Path for exported data, numpy arrays
-DATA_PATH = os.path.join('MP_Data') 
+DATA_PATH = os.path.join('MP_Data')
 
-# Actions that we try to detect
-actions = np.array(['toi','thich','mau hong','none'])
+# Actions that we try to detect (can be dynamically updated)
+actions = np.array(['book'])  # Example gloss (word)
 
-# Thirty videos worth of data
-no_sequences = 30
+video_url = 'https://aslbricks.org/New/ASL-Videos/book.mp4'
 
-# Videos are going to be 30 frames in length
-sequence_length = 30
 
-cap = cv2.VideoCapture(0)
+def setup_video_capture(video_url):
+    """Initialize video capture from the given URL."""
+    return cv2.VideoCapture(video_url)
 
-# Set mediapipe model 
-with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
+
+def process_frame(frame, holistic, action, sequence, frame_num):
+    """Process a single frame: detect landmarks, draw them, and save keypoints."""
+    # Make detections
+    image, results = mediapipe_detection(frame, holistic)
+
+    # Draw landmarks
+    draw_styled_landmarks(image, results)
     
-    # NEW LOOP
-    # Loop through actions
-    for action in actions:
-        # Loop through sequences aka videos
-        for sequence in range(no_sequences):
-            # Loop through video length aka sequence length
-            for frame_num in range(sequence_length):
+    # Export keypoints
+    keypoints = extract_keypoints(results)
+    npy_path = os.path.join(DATA_PATH, action, str(sequence), str(frame_num))
+    os.makedirs(os.path.dirname(npy_path), exist_ok=True)  # Dynamically create directories
+    np.save(npy_path, keypoints)
 
-                # Read feed
-                ret, frame = cap.read()
 
-                # Make detections
-                image, results = mediapipe_detection(frame, holistic)
+def collect_data(actions, video_url):
+    """Main function to collect data for the given actions from the video."""
+    cap = setup_video_capture(video_url)
 
-                # Draw landmarks
-                draw_styled_landmarks(image, results)
-                
-                # NEW Apply wait logic
-                if frame_num == 0: 
-                    cv2.putText(image, 'STARTING COLLECTION', (120,200), 
-                               cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255, 0), 4, cv2.LINE_AA)
-                    cv2.putText(image, 'Collecting frames for {} Video Number {}'.format(action, sequence), (15,12), 
-                               cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
-                    # Show to screen
-                    cv2.imshow('OpenCV Feed', image)
-                    cv2.waitKey(2000)
-                else: 
-                    cv2.putText(image, 'Collecting frames for {} Video Number {}'.format(action, sequence), (15,12), 
-                               cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
-                    # Show to screen
-                    cv2.imshow('OpenCV Feed', image)
-                
-                # NEW Export keypoints
-                keypoints = extract_keypoints(results)
-                npy_path = os.path.join(DATA_PATH, action, str(sequence), str(frame_num))
-                np.save(npy_path, keypoints)
+    # Set mediapipe model
+    with mp.solutions.holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
+        for action in actions:
+            sequence = 0  # Initialize sequence counter
 
-                # Break gracefully
-                if cv2.waitKey(10) & 0xFF == ord('q'):
+            while True:  # Dynamically process video frames
+                frame_num = 0  # Initialize frame counter for each sequence
+
+                while True:  # Process frames for the current sequence
+                    # Read feed
+                    ret, frame = cap.read()
+                    if not ret:  # Break if the video ends
+                        break
+
+                    process_frame(frame, holistic, action, sequence, frame_num)
+                    frame_num += 1
+
+                    # Break gracefully on 'q' key press
+                    if cv2.waitKey(10) & 0xFF == ord('q'):
+                        cap.release()
+                        cv2.destroyAllWindows()
+                        exit()
+
+                # Increment sequence counter
+                sequence += 1
+
+                # Break if the video ends
+                if not ret:
                     break
-                    
+
     cap.release()
     cv2.destroyAllWindows()
+
+
+if __name__ == "__main__":
+    collect_data(actions, video_url)
