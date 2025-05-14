@@ -1,0 +1,10 @@
+color
+doctor
+school
+table
+eat
+can
+blue
+chair
+kiss
+cook

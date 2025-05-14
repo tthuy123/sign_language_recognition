@@ -1,0 +1,1487 @@
+[{
+    "gloss": "drink",
+    "instances": [
+        {
+            "bbox": [
+                28,
+                0,
+                542,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 21,
+            "signer_id": 21,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1467773819.9825.mp4",
+            "variation_id": 0,
+            "video_id": "17713"
+        }
+    ]
+},
+{
+    "gloss": "computer",
+    "instances": [
+        {
+            "bbox": [
+                74,
+                19,
+                565,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 23,
+            "signer_id": 59,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1466901185.5915.mp4",
+            "variation_id": 1,
+            "video_id": "12320"
+        }
+    ]
+},
+{
+    "gloss": "before",
+    "instances": [
+        {
+            "bbox": [
+                386,
+                45,
+                810,
+                720
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 20,
+            "signer_id": 38,
+            "source": "startasl",
+            "split": "test",
+            "url": "https://s3-us-west-1.amazonaws.com/files.startasl.com/asldictionary/before.mp4",
+            "variation_id": 1,
+            "video_id": "05727"
+        },
+        {
+            "bbox": [
+                74,
+                23,
+                209,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 23,
+            "signer_id": 10,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/22/22829.mp4",
+            "variation_id": 1,
+            "video_id": "05739"
+        },
+        {
+            "bbox": [
+                65,
+                9,
+                219,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 25,
+            "signer_id": 11,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/5/5971.mp4",
+            "variation_id": 0,
+            "video_id": "05741"
+        }
+    ]
+},
+{
+    "gloss": "go",
+    "instances": [
+        {
+            "bbox": [
+                78,
+                25,
+                214,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 9,
+            "signer_id": 10,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/23/23517.mp4",
+            "variation_id": 1,
+            "video_id": "24960"
+        }
+    ]
+},
+{
+    "gloss": "clothes",
+    "instances": [
+        {
+            "bbox": [
+                70,
+                21,
+                614,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 8,
+            "signer_id": 59,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1466899298.7370.mp4",
+            "variation_id": 0,
+            "video_id": "11311"
+        }
+    ]
+},
+{
+    "gloss": "who",
+    "instances": [
+        {
+            "bbox": [
+                235,
+                15,
+                526,
+                414
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 8,
+            "signer_id": 36,
+            "source": "startasl",
+            "split": "test",
+            "url": "https://s3-us-west-1.amazonaws.com/files.startasl.com/asldictionary/who.mp4",
+            "variation_id": 0,
+            "video_id": "63226"
+        }
+    ]
+},
+{
+    "gloss": "candy",
+    "instances": [
+        {
+            "bbox": [
+                23,
+                0,
+                286,
+                240
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 18,
+            "signer_id": 56,
+            "source": "spreadthesign",
+            "split": "test",
+            "url": "https://media.spreadthesign.com/video/mp4/13/51294.mp4",
+            "variation_id": 1,
+            "video_id": "08915"
+        },
+        {
+            "bbox": [
+                78,
+                15,
+                233,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 21,
+            "signer_id": 11,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/7/7906.mp4",
+            "variation_id": 1,
+            "video_id": "08925"
+        }
+    ]
+},
+{
+    "gloss": "cousin",
+    "instances": [
+        {
+            "bbox": [
+                59,
+                25,
+                528,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 9,
+            "signer_id": 59,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1466904400.1624.mp4",
+            "variation_id": 0,
+            "video_id": "13635"
+        }
+    ]
+},
+{
+    "gloss": "deaf",
+    "instances": [
+        {
+            "bbox": [
+                95,
+                28,
+                530,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 16,
+            "signer_id": 15,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1522766619.2346.mp4",
+            "variation_id": 0,
+            "video_id": "14888"
+        }
+    ]
+},
+{
+    "gloss": "help",
+    "instances": [
+        {
+            "bbox": [
+                66,
+                20,
+                607,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 8,
+            "signer_id": 17,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1471136062.8464.mp4",
+            "variation_id": 0,
+            "video_id": "27209"
+        },
+        {
+            "bbox": [
+                92,
+                24,
+                202,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 13,
+            "signer_id": 10,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/23/23431.mp4",
+            "variation_id": 0,
+            "video_id": "27213"
+        }
+    ]
+},
+{
+    "gloss": "no",
+    "instances": [
+        {
+            "bbox": [
+                223,
+                12,
+                525,
+                414
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 9,
+            "signer_id": 36,
+            "source": "startasl",
+            "split": "test",
+            "url": "https://s3-us-west-1.amazonaws.com/files.startasl.com/asldictionary/no.mp4",
+            "variation_id": 0,
+            "video_id": "38525"
+        }
+    ]
+},
+{
+    "gloss": "thin",
+    "instances": [
+        {
+            "bbox": [
+                129,
+                21,
+                550,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 20,
+            "signer_id": 34,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1546575308.9841.mp4",
+            "variation_id": 0,
+            "video_id": "57943"
+        }
+    ]
+},
+{
+    "gloss": "year",
+    "instances": [
+        {
+            "bbox": [
+                229,
+                13,
+                548,
+                414
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 8,
+            "signer_id": 36,
+            "source": "startasl",
+            "split": "test",
+            "url": "https://s3-us-west-1.amazonaws.com/files.startasl.com/asldictionary/year.mp4",
+            "variation_id": 0,
+            "video_id": "64210"
+        },
+        {
+            "bbox": [
+                52,
+                0,
+                274,
+                240
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 15,
+            "signer_id": 42,
+            "source": "spreadthesign",
+            "split": "test",
+            "url": "https://media.spreadthesign.com/video/mp4/13/51103.mp4",
+            "variation_id": 0,
+            "video_id": "64209"
+        }
+    ]
+},
+{
+    "gloss": "yes",
+    "instances": [
+        {
+            "bbox": [
+                70,
+                20,
+                212,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 9,
+            "signer_id": 10,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/23/23546.mp4",
+            "variation_id": 0,
+            "video_id": "64293"
+        }
+    ]
+},
+{
+    "gloss": "all",
+    "instances": [
+        {
+            "bbox": [
+                43,
+                0,
+                269,
+                240
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 16,
+            "signer_id": 2,
+            "source": "spreadthesign",
+            "split": "test",
+            "url": "https://media.spreadthesign.com/video/mp4/13/244016.mp4",
+            "variation_id": 0,
+            "video_id": "01986"
+        }
+    ]
+},
+{
+    "gloss": "like",
+    "instances": [
+        {
+            "bbox": [
+                344,
+                36,
+                876,
+                720
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 0,
+            "signer_id": 118,
+            "source": "aslbrick",
+            "split": "test",
+            "url": "http://aslbricks.org/New/ASL-Videos/like.mp4",
+            "variation_id": 0,
+            "video_id": "69389"
+        }
+    ]
+},
+{
+    "gloss": "now",
+    "instances": [
+        {
+            "bbox": [
+                46,
+                1,
+                273,
+                240
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 18,
+            "signer_id": 56,
+            "source": "spreadthesign",
+            "split": "test",
+            "url": "https://media.spreadthesign.com/video/mp4/13/49006.mp4",
+            "variation_id": 0,
+            "video_id": "38991"
+        }
+    ]
+},
+{
+    "gloss": "thanksgiving",
+    "instances": [
+        {
+            "bbox": [
+                65,
+                16,
+                209,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 18,
+            "signer_id": 10,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/23/23653.mp4",
+            "variation_id": 0,
+            "video_id": "57640"
+        }
+    ]
+},
+{
+    "gloss": "what",
+    "instances": [
+        {
+            "bbox": [
+                52,
+                24,
+                246,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 25,
+            "signer_id": 10,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/23/23463.mp4",
+            "variation_id": 1,
+            "video_id": "62975"
+        }
+    ]
+},
+{
+    "gloss": "woman",
+    "instances": [
+        {
+            "bbox": [
+                33,
+                0,
+                294,
+                240
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 15,
+            "signer_id": 42,
+            "source": "spreadthesign",
+            "split": "test",
+            "url": "https://media.spreadthesign.com/video/mp4/13/51081.mp4",
+            "variation_id": 0,
+            "video_id": "63664"
+        }
+    ]
+},
+{
+    "gloss": "bowling",
+    "instances": [
+        {
+            "bbox": [
+                89,
+                9,
+                213,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 17,
+            "signer_id": 11,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/6/6345.mp4",
+            "variation_id": 0,
+            "video_id": "07400"
+        }
+    ]
+},
+{
+    "gloss": "can",
+    "instances": [
+        {
+            "bbox": [
+                285,
+                31,
+                964,
+                720
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 0,
+            "signer_id": 118,
+            "source": "aslbrick",
+            "split": "test",
+            "url": "http://aslbricks.org/New/ASL-Videos/can.mp4",
+            "variation_id": 0,
+            "video_id": "69257"
+        }
+    ]
+},
+{
+    "gloss": "fish",
+    "instances": [
+        {
+            "bbox": [
+                36,
+                9,
+                540,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 9,
+            "signer_id": 21,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1468494686.303.mp4",
+            "variation_id": 0,
+            "video_id": "22117"
+        }
+    ]
+},
+{
+    "gloss": "kiss",
+    "instances": [
+        {
+            "bbox": [
+                444,
+                60,
+                822,
+                720
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 14,
+            "signer_id": 38,
+            "source": "startasl",
+            "split": "test",
+            "url": "https://s3-us-west-1.amazonaws.com/files.startasl.com/asldictionary/kiss.mp4",
+            "variation_id": 1,
+            "video_id": "31749"
+        }
+    ]
+},
+{
+    "gloss": "shirt",
+    "instances": [
+        {
+            "bbox": [
+                65,
+                17,
+                213,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 22,
+            "signer_id": 10,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/23/23618.mp4",
+            "variation_id": 0,
+            "video_id": "51066"
+        },
+        {
+            "bbox": [
+                71,
+                14,
+                224,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 24,
+            "signer_id": 11,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/7/7169.mp4",
+            "variation_id": 0,
+            "video_id": "51068"
+        }
+    ]
+},
+{
+    "gloss": "tall",
+    "instances": [
+        {
+            "bbox": [
+                73,
+                0,
+                557,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 8,
+            "signer_id": 13,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1468943060.7425.mp4",
+            "variation_id": 0,
+            "video_id": "56843"
+        }
+    ]
+},
+{
+    "gloss": "white",
+    "instances": [
+        {
+            "bbox": [
+                237,
+                13,
+                537,
+                414
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 17,
+            "signer_id": 36,
+            "source": "startasl",
+            "split": "test",
+            "url": "https://s3-us-west-1.amazonaws.com/files.startasl.com/asldictionary/white.mp4",
+            "variation_id": 0,
+            "video_id": "63201"
+        }
+    ]
+},
+{
+    "gloss": "accident",
+    "instances": [
+        {
+            "bbox": [
+                61,
+                12,
+                227,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 15,
+            "signer_id": 11,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/7/7493.mp4",
+            "variation_id": 0,
+            "video_id": "00634"
+        }
+    ]
+},
+{
+    "gloss": "bird",
+    "instances": [
+        {
+            "bbox": [
+                86,
+                18,
+                509,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 5,
+            "signer_id": 59,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1466682238.9870.mp4",
+            "variation_id": 0,
+            "video_id": "06335"
+        }
+    ]
+},
+{
+    "gloss": "change",
+    "instances": [
+        {
+            "bbox": [
+                64,
+                4,
+                266,
+                240
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 5,
+            "signer_id": 2,
+            "source": "spreadthesign",
+            "split": "test",
+            "url": "https://media.spreadthesign.com/video/mp4/13/125921.mp4",
+            "variation_id": 0,
+            "video_id": "09950"
+        }
+    ]
+},
+{
+    "gloss": "color",
+    "instances": [
+        {
+            "bbox": [
+                54,
+                9,
+                215,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 5,
+            "signer_id": 11,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/14/14075.mp4",
+            "variation_id": 0,
+            "video_id": "11772"
+        }
+    ]
+},
+{
+    "gloss": "corn",
+    "instances": [
+        {
+            "bbox": [
+                61,
+                15,
+                292,
+                240
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 4,
+            "signer_id": 0,
+            "source": "spreadthesign",
+            "split": "test",
+            "url": "https://media.spreadthesign.com/video/mp4/13/69483.mp4",
+            "variation_id": 1,
+            "video_id": "13325"
+        },
+        {
+            "bbox": [
+                67,
+                9,
+                218,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 18,
+            "signer_id": 11,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/8/8825.mp4",
+            "variation_id": 0,
+            "video_id": "13334"
+        }
+    ]
+},
+{
+    "gloss": "doctor",
+    "instances": [
+        {
+            "bbox": [
+                91,
+                21,
+                201,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 8,
+            "signer_id": 10,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/22/22644.mp4",
+            "variation_id": 0,
+            "video_id": "17020"
+        }
+    ]
+},
+{
+    "gloss": "give",
+    "instances": [
+        {
+            "bbox": [
+                31,
+                0,
+                272,
+                240
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 20,
+            "signer_id": 35,
+            "source": "spreadthesign",
+            "split": "test",
+            "url": "https://media.spreadthesign.com/video/mp4/13/51920.mp4",
+            "variation_id": 0,
+            "video_id": "24636"
+        },
+        {
+            "bbox": [
+                89,
+                19,
+                219,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 24,
+            "signer_id": 10,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/23/23273.mp4",
+            "variation_id": 1,
+            "video_id": "24649"
+        }
+    ]
+},
+{
+    "gloss": "last",
+    "instances": [
+        {
+            "bbox": [
+                65,
+                9,
+                219,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 10,
+            "signer_id": 11,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/5/5971.mp4",
+            "variation_id": 1,
+            "video_id": "32253"
+        },
+        {
+            "bbox": [
+                36,
+                33,
+                247,
+                240
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 13,
+            "signer_id": 2,
+            "source": "spreadthesign",
+            "split": "test",
+            "url": "https://media.spreadthesign.com/video/mp4/13/91452.mp4",
+            "variation_id": 0,
+            "video_id": "32246"
+        }
+    ]
+},
+{
+    "gloss": "meet",
+    "instances": [
+        {
+            "bbox": [
+                150,
+                0,
+                551,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 5,
+            "signer_id": 13,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1468714718.3075.mp4",
+            "variation_id": 0,
+            "video_id": "35513"
+        }
+    ]
+},
+{
+    "gloss": "pizza",
+    "instances": [
+        {
+            "bbox": [
+                339,
+                35,
+                924,
+                720
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 1,
+            "signer_id": 117,
+            "source": "aslbrick",
+            "split": "test",
+            "url": "http://aslbricks.org/New/ASL-Videos/pizza.mp4",
+            "variation_id": 1,
+            "video_id": "69431"
+        }
+    ]
+},
+{
+    "gloss": "play",
+    "instances": [
+        {
+            "bbox": [
+                295,
+                40,
+                962,
+                720
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 0,
+            "signer_id": 118,
+            "source": "aslbrick",
+            "split": "test",
+            "url": "http://aslbricks.org/New/ASL-Videos/play.mp4",
+            "variation_id": 0,
+            "video_id": "69433"
+        },
+        {
+            "bbox": [
+                147,
+                0,
+                593,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 6,
+            "signer_id": 13,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1468726677.3753.mp4",
+            "variation_id": 0,
+            "video_id": "43171"
+        }
+    ]
+},
+{
+    "gloss": "secretary",
+    "instances": [
+        {
+            "bbox": [
+                103,
+                0,
+                582,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 5,
+            "signer_id": 13,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1468764756.5155.mp4",
+            "variation_id": 1,
+            "video_id": "50041"
+        }
+    ]
+},
+{
+    "gloss": "short",
+    "instances": [
+        {
+            "bbox": [
+                47,
+                13,
+                217,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 16,
+            "signer_id": 11,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/9/9192.mp4",
+            "variation_id": 0,
+            "video_id": "51233"
+        }
+    ]
+},
+{
+    "gloss": "time",
+    "instances": [
+        {
+            "bbox": [
+                77,
+                13,
+                230,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 5,
+            "signer_id": 10,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/23/23948.mp4",
+            "variation_id": 0,
+            "video_id": "58502"
+        }
+    ]
+},
+{
+    "gloss": "work",
+    "instances": [
+        {
+            "bbox": [
+                57,
+                6,
+                262,
+                240
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 5,
+            "signer_id": 2,
+            "source": "spreadthesign",
+            "split": "test",
+            "url": "https://media.spreadthesign.com/video/mp4/13/244773.mp4",
+            "variation_id": 0,
+            "video_id": "63789"
+        }
+    ]
+},
+{
+    "gloss": "basketball",
+    "instances": [
+        {
+            "bbox": [
+                478,
+                33,
+                1478,
+                1080
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 1,
+            "signer_id": 120,
+            "source": "aslbrick",
+            "split": "test",
+            "url": "http://aslbricks.org/New/ASL-Videos/basketball.mp4",
+            "variation_id": 0,
+            "video_id": "69225"
+        }
+    ]
+},
+{
+    "gloss": "birthday",
+    "instances": [
+        {
+            "bbox": [
+                75,
+                24,
+                510,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 16,
+            "signer_id": 59,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1466682386.9294.mp4",
+            "variation_id": 0,
+            "video_id": "06360"
+        }
+    ]
+},
+{
+    "gloss": "brown",
+    "instances": [
+        {
+            "bbox": [
+                335,
+                37,
+                874,
+                720
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 1,
+            "signer_id": 118,
+            "source": "aslbrick",
+            "split": "test",
+            "url": "http://aslbricks.org/New/ASL-Videos/brown.mp4",
+            "variation_id": 0,
+            "video_id": "69252"
+        }
+    ]
+},
+{
+    "gloss": "but",
+    "instances": [
+        {
+            "bbox": [
+                82,
+                25,
+                220,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 5,
+            "signer_id": 10,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/23/23503.mp4",
+            "variation_id": 1,
+            "video_id": "08429"
+        }
+    ]
+},
+{
+    "gloss": "cheat",
+    "instances": [
+        {
+            "bbox": [
+                56,
+                11,
+                207,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 22,
+            "signer_id": 11,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/14/14047.mp4",
+            "variation_id": 1,
+            "video_id": "10159"
+        }
+    ]
+},
+{
+    "gloss": "city",
+    "instances": [
+        {
+            "bbox": [
+                490,
+                71,
+                1375,
+                1080
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 1,
+            "signer_id": 115,
+            "source": "aslbrick",
+            "split": "test",
+            "url": "http://aslbricks.org/New/ASL-Videos/city.mp4",
+            "variation_id": 0,
+            "video_id": "69269"
+        }
+    ]
+},
+{
+    "gloss": "full",
+    "instances": [
+        {
+            "bbox": [
+                242,
+                46,
+                836,
+                720
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 15,
+            "signer_id": 38,
+            "source": "startasl",
+            "split": "test",
+            "url": "https://s3-us-west-1.amazonaws.com/files.startasl.com/asldictionary/full.mp4",
+            "variation_id": 1,
+            "video_id": "23767"
+        }
+    ]
+},
+{
+    "gloss": "how",
+    "instances": [
+        {
+            "bbox": [
+                378,
+                49,
+                894,
+                720
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 1,
+            "signer_id": 115,
+            "source": "aslbrick",
+            "split": "test",
+            "url": "http://aslbricks.org/New/ASL-Videos/how.mp4",
+            "variation_id": 1,
+            "video_id": "69370"
+        },
+        {
+            "bbox": [
+                51,
+                0,
+                255,
+                240
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 10,
+            "signer_id": 8,
+            "source": "spreadthesign",
+            "split": "test",
+            "url": "https://media.spreadthesign.com/video/mp4/13/456602.mp4",
+            "variation_id": 0,
+            "video_id": "28201"
+        }
+    ]
+},
+{
+    "gloss": "letter",
+    "instances": [
+        {
+            "bbox": [
+                127,
+                26,
+                515,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 6,
+            "signer_id": 15,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1553868352.971.mp4",
+            "variation_id": 2,
+            "video_id": "32950"
+        }
+    ]
+},
+{
+    "gloss": "pull",
+    "instances": [
+        {
+            "bbox": [
+                71,
+                38,
+                1022,
+                720
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 1,
+            "signer_id": 115,
+            "source": "aslbrick",
+            "split": "test",
+            "url": "http://aslbricks.org/New/ASL-Videos/pull.mp4",
+            "variation_id": 0,
+            "video_id": "69439"
+        }
+    ]
+},
+{
+    "gloss": "purple",
+    "instances": [
+        {
+            "bbox": [
+                169,
+                38,
+                878,
+                720
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 1,
+            "signer_id": 118,
+            "source": "aslbrick",
+            "split": "test",
+            "url": "http://aslbricks.org/New/ASL-Videos/purple.mp4",
+            "variation_id": 0,
+            "video_id": "69440"
+        }
+    ]
+},
+{
+    "gloss": "right",
+    "instances": [
+        {
+            "bbox": [
+                86,
+                15,
+                214,
+                192
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 20,
+            "signer_id": 11,
+            "source": "signingsavvy",
+            "split": "test",
+            "url": "https://www.signingsavvy.com/signs/mp4/6/6234.mp4",
+            "variation_id": 0,
+            "video_id": "48115"
+        }
+    ]
+},
+{
+    "gloss": "same",
+    "instances": [
+        {
+            "bbox": [
+                61,
+                0,
+                257,
+                240
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 0,
+            "signer_id": 63,
+            "source": "spreadthesign",
+            "split": "test",
+            "url": "https://media.spreadthesign.com/video/mp4/13/50775.mp4",
+            "variation_id": 0,
+            "video_id": "49173"
+        }
+    ]
+},
+{
+    "gloss": "tell",
+    "instances": [
+        {
+            "bbox": [
+                134,
+                0,
+                506,
+                480
+            ],
+            "fps": 25,
+            "frame_end": -1,
+            "frame_start": 1,
+            "instance_id": 1,
+            "signer_id": 13,
+            "source": "asldeafined",
+            "split": "test",
+            "url": "https://media.asldeafined.com/vocabulary/1468943705.2416.mp4",
+            "variation_id": 0,
+            "video_id": "57278"
+        }
+    ]
+}
+]
