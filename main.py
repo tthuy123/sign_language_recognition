@@ -5,17 +5,15 @@ from function import *
 #from grammar_correction import *
 import keyboard
 
-# Load trained model
-model = load_model('action_kdn.h5')
+model = load_model('action_kdn2.h5')
 
-# Define your class labels (replace with your actual actions)
-actions = ['toi','thich','mau hong','none']  # Replace this list with your actual actions
+actions = ['accident', 'africa', 'all', 'apple', 'none'] 
 
 # Detection variables
 sequence = []
 sentence = []
 grammar_result = []
-threshold = 0.2
+threshold = 0.8
 count = 0
 last_prediction = ''
 
