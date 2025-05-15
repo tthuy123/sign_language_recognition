@@ -56,44 +56,52 @@ log_dir = os.path.join('Logs')
 tb_callback = TensorBoard(log_dir=log_dir)
 early_stop = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
 
-# Model
+# # Model
 model = Sequential()
 
 # LSTM 1
-model.add(Bidirectional(LSTM(128, return_sequences=True), input_shape=(50, 1662)))
-model.add(BatchNormalization())
-model.add(Dropout(0.3))
+model.add(LSTM(64, return_sequences=True, activation='relu', input_shape=(50,1662)))
+# model.add(BatchNormalization())
+# model.add(Dropout(0.3))
 
 # LSTM 2
 model.add(LSTM(256, return_sequences=True))
-model.add(BatchNormalization())
-model.add(Dropout(0.4))
+# model.add(BatchNormalization())
+# model.add(Dropout(0.4))
 
 # LSTM 3
 model.add(LSTM(128, return_sequences=False))
-model.add(BatchNormalization())
-model.add(Dropout(0.5))
+# model.add(BatchNormalization())
+# model.add(Dropout(0.5))
 
 # Dense layers
 model.add(Dense(128, activation='relu'))
-model.add(Dropout(0.3))
+# model.add(Dropout(0.3))
 
 model.add(Dense(64, activation='relu'))
-model.add(Dropout(0.3))
+# model.add(Dropout(0.3))
 
 # Output layer
-model.add(Dense(10, activation='softmax'))  # 100 classes
+model.add(Dense(actions.shape[0], activation='softmax')) 
 
 model.compile(optimizer=Adam(learning_rate=1e-4), 
               loss='categorical_crossentropy', 
               metrics=['categorical_accuracy'])
 
+# model = Sequential()
+# model.add(LSTM(64, return_sequences=True, activation='relu', input_shape=(50,1662)))
+# model.add(LSTM(128, return_sequences=True, activation='relu'))
+# model.add(LSTM(64, return_sequences=False, activation='relu'))
+# model.add(Dense(64, activation='relu'))
+# model.add(Dense(32, activation='relu'))
+# model.add(Dense(actions.shape[0], activation='softmax'))
 
+model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['categorical_accuracy'])
 # Train model
 model.fit(X_train, y_train, epochs=200, validation_split=0.1, callbacks=[tb_callback, early_stop])
 
 # Lưu model
-model.save('action_kdn2.h5')
+model.save('real_model2.h5')
 
 # Make predictions on the test set
 predictions = np.argmax(model.predict(X_test), axis=1)

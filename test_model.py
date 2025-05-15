@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 
 SEQUENCE_LENGTH = 50
 GLOSS_PATH = './dataset/easy2.txt'
-MODEL_PATH = 'action_kdn2.h5'
+MODEL_PATH = 'real_model2.h5'
 TEST_DATA_PATH = 'TEST_DATASET'
 OUTPUT_CSV = 'test_performance.csv'
 

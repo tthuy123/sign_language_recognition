@@ -5,10 +5,10 @@ from function import *
 #from grammar_correction import *
 import keyboard
 
-model = load_model('action_kdn2.h5')
+model = load_model('real_model2.h5')
 
-actions = ['accident', 'africa', 'all', 'apple', 'none'] 
-
+with open('./dataset/easy2.txt', 'r') as f:
+    actions = np.array([line.strip() for line in f if line.strip()])
 # Detection variables
 sequence = []
 sentence = []
@@ -32,9 +32,9 @@ with mp_holistic.Holistic(min_detection_confidence=0.75, min_tracking_confidence
         # Extract keypoints
         keypoints = extract_keypoints(results)
         sequence.append(keypoints)
-        sequence = sequence[-30:]
+        sequence = sequence[-50:]
 
-        if len(sequence) == 30:
+        if len(sequence) == 50:
             res = model.predict(np.expand_dims(sequence, axis=0))[0]
             print(actions[np.argmax(res)])
             print(count)
