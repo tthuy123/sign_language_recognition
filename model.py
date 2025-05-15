@@ -61,17 +61,17 @@ model = Sequential()
 
 # LSTM 1
 model.add(LSTM(64, return_sequences=True, activation='relu', input_shape=(50,1662)))
-# model.add(BatchNormalization())
+model.add(BatchNormalization())
 # model.add(Dropout(0.3))
 
 # LSTM 2
 model.add(LSTM(256, return_sequences=True))
-# model.add(BatchNormalization())
+model.add(BatchNormalization())
 # model.add(Dropout(0.4))
 
 # LSTM 3
 model.add(LSTM(128, return_sequences=False))
-# model.add(BatchNormalization())
+model.add(BatchNormalization())
 # model.add(Dropout(0.5))
 
 # Dense layers
